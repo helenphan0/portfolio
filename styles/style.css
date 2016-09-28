@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+/*	background: url("../img/background.png") no-repeat fixed;
+	background-size: cover;	  */
+}
+
+main {
+	width: 100%;
+	padding-bottom: 75px;
+}
+
+.banner {
+	width: 100%;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: #44d9e6;
+	bottom: 0px;
+	left: 0px;
+	padding: 15px 30px;
+	text-align: center;
+}
+
+section {
+	padding: 20px 40px;
+}
+
+nav>div {
+	display: inline-block;
+	min-width: 100px;
+	width: 20%;
+	border: 1px solid grey;
+}
+
+hr {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.portfolio>h4 {
+	width: 45%;
+	padding: 5px;
+	margin: auto;
+}
+
+.about, .port-item, .contact, .portfolio>h4 {
+	background-color: white;
+	border: 1px solid lightgrey;	
+/*	background-color:rgba(255, 255, 255, 0.90);  */
+	
+}
+
+.about, .contact {
+	margin: 35px 50px;	
+}
+
+.port-item {
+	margin: 10px 20px;
+	padding: 20px 15px;
+}
+
+.contact>h4 {
+	margin: 5px 0;
+}
+
+.contact, .contact>div, h4 {
+	text-align: center;
+}
+
+.contact>div {
+	display: inline-block;
+	min-width: 120px;
+	width: 12%;
+	height: 33px;
+	margin: 15px 0;
+	background-color: #44d9e6;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+.contact a {
+	text-decoration: none;
+}
+
+
