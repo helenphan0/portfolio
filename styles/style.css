@@ -3,8 +3,8 @@
 }
 
 body {
-/*	background: url("../img/background.png") no-repeat fixed;
-	background-size: cover;	  */
+	background: url("../img/coffee-blocks.jpeg") no-repeat fixed;
+	background-size: cover;	  
 }
 
 main {
@@ -34,7 +34,10 @@ nav>div {
 	display: inline-block;
 	min-width: 100px;
 	width: 20%;
-	border: 1px solid grey;
+	height: 30px;
+	border-radius: 6px;
+	padding: 6px;
+	background-color: white;
 }
 
 hr {
@@ -46,12 +49,14 @@ hr {
 	width: 45%;
 	padding: 5px;
 	margin: auto;
+	font-size: 23px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
 
-.about, .port-item, .contact, .portfolio>h4 {
+.about, .port-item, .contact {
 	background-color: white;
-	border: 1px solid lightgrey;	
-/*	background-color:rgba(255, 255, 255, 0.90);  */
+	background-color:rgba(255, 255, 255, 0.95);  
 	
 }
 
@@ -61,10 +66,10 @@ hr {
 
 .port-item {
 	margin: 10px 20px;
-	padding: 20px 15px;
+	padding: 20px;
 }
 
-.contact>h4 {
+.contact>h4, .port-item h4 {
 	margin: 5px 0;
 }
 
@@ -83,7 +88,7 @@ hr {
 	border-radius: 6px;
 }
 
-.contact a {
+a {
 	text-decoration: none;
 }
 
