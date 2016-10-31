@@ -3,7 +3,7 @@
 }
 
 body {
-	background: url("../img/coffee-blocks.jpeg") no-repeat fixed;
+	background: url("../img/work-desk2.jpeg") no-repeat fixed;
 	background-size: cover;	  
 }
 
@@ -19,7 +19,6 @@ main {
 nav {
 	position: fixed;
 	width: 100%;
-	background-color: #44d9e6;
 	bottom: 0px;
 	left: 0px;
 	padding: 15px 30px;
@@ -30,14 +29,30 @@ section {
 	padding: 20px 40px;
 }
 
-nav>div {
+nav>a {
 	display: inline-block;
-	min-width: 100px;
-	width: 20%;
-	height: 30px;
-	border-radius: 6px;
+	color: white;
+	width: 11%;
+	height: 33px;
+	padding: 2px;
+	background-color: #FF3E96;
+	vertical-align: top;
+}
+
+nav>a:hover {
+	background-color: #8B2252;
+}
+
+a>div {
 	padding: 6px;
-	background-color: white;
+}
+
+.contact div:hover, .links a:hover {
+	color: #FF3E96;
+}
+
+.links a {
+	color: black;
 }
 
 hr {
@@ -54,14 +69,21 @@ hr {
 	text-shadow: 2px 2px 4px #000000;
 }
 
-.about, .port-item, .contact {
-	background-color: white;
-	background-color:rgba(255, 255, 255, 0.95);  
-	
+.about, .port-item, .skills {
+	background-color:rgba(255, 255, 255, 0.90);  
 }
 
-.about, .contact {
-	margin: 35px 50px;	
+.about:hover, .port-item:hover, .skills:hover {
+	background-color: white;
+}
+
+.about, .contact, .portfolio, .skills {
+	width: 80%;
+	margin: 35px auto;	
+}
+
+.about {
+	margin-top: 120px;
 }
 
 .port-item {
@@ -73,23 +95,33 @@ hr {
 	margin: 5px 0;
 }
 
-.contact, .contact>div, h4 {
+.contact, .contact div, h4 {
 	text-align: center;
 }
 
-.contact>div {
+.contact div {
 	display: inline-block;
-	min-width: 120px;
-	width: 12%;
+	font-size: 28px;
+	color: black;
 	height: 33px;
-	margin: 15px 0;
-	background-color: #44d9e6;
-	padding: 8px;
-	border-radius: 6px;
+	margin: 5px;
 }
 
 a {
 	text-decoration: none;
+}
+
+.skill-col {
+	display: inline-block;
+	width: 25%;
+}
+
+.skill-col>p {
+	margin: 4px;
+}
+
+.cms {
+	font-style: italic;
 }
 
 
