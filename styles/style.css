@@ -3,13 +3,14 @@
 }
 
 body {
-	background: url("../img/work-desk2.jpeg") no-repeat fixed;
+	background: url("../img/yellow-flower.jpg") no-repeat fixed;
 	background-size: cover;	  
+	font-family: 'Cabin', sans-serif;
 }
 
 main {
 	width: 100%;
-	padding-bottom: 75px;
+
 }
 
 .banner {
@@ -19,9 +20,9 @@ main {
 nav {
 	position: fixed;
 	width: 100%;
-	bottom: 0px;
+	top: 0px;
 	left: 0px;
-	padding: 15px 30px;
+
 	text-align: center;
 }
 
@@ -31,26 +32,97 @@ section {
 
 nav>a {
 	display: inline-block;
-	color: white;
+	color: black;
 	width: 11%;
 	height: 33px;
 	padding: 2px;
-	background-color: #FF3E96;
+	background-color: #FFFF00;
 	text-decoration: none;
 	vertical-align: top;
+
 }
 
 nav>a:hover {
-	background-color: #8B2252;
+	background-color: #EEEE00;
 }
 
 a>div {
 	padding: 6px;
+}
 
+.welcome {
+	width: 450px;
+	margin: 200px 100px;
+	text-align: left;
+	padding-left: 0;
+}
+
+.welcome>h2 {
+	font-family: 'Oleo Script', cursive;
+	font-size: 55px;
+}
+
+.welcome>h4 {
+	font-size: 27px;
+}
+
+.welcome>h2, .welcome>h4 {
+	margin: 4px 0;
+}
+
+.welcome>hr, .welcome>h4 {
+	text-align: left;
+}
+
+.welcome>hr {
+	margin-left: 0;
+}
+
+div.message {
+	margin: 4px 0;
+}
+
+p.message1, p.message2 {
+	display: inline-block;
+	color: black; 
+	font-family: "Courier";
+	font-size: 22px;
+	margin: -200px 0 0 100px;
+	padding-top: 3px;
+	padding-bottom: 100px;
+	white-space: nowrap; 
+	overflow: hidden;  
+	width: 80%;
+}
+
+p.message1 {
+	animation: type 4s steps(60, end); 
+}
+
+p.message2 {
+	animation: type2 6s steps(60, end);
+}
+
+span.blinker {
+	animation: blink 1s infinite;
+}
+
+@keyframes type { 
+	from { width: 0; } 
+} 
+
+@keyframes type2 {
+	0% { width: 0; }
+	50% { width: 0; }
+	100% { width: 100; } 
+} 
+
+@keyframes blink {
+	to { opacity: .0; }
 }
 
 .contact div:hover, .links a:hover {
-	color: #FF3E96;
+	color: #EEC900;
 }
 
 .links a {
@@ -62,47 +134,55 @@ hr {
 	margin: 10px auto;
 }
 
+section.portfolio {
+	background-color: none;
+	padding: 0;
+	width: 100%;
+}
+
 .portfolio>h4 {
-	color: #FBF5E6;
+	color: black;
 	font-size: 23px;
 	width: 45%;
 	padding: 5px;
-	margin: auto;
-
-	text-shadow: 2px 2px 4px #000000;
+	margin: 10px auto;
 }
 
-.about, .port-item, .skills {
+.port-item, .skills {
 	background-color:rgba(255, 255, 255, 0.90);  
 }
 
-.about:hover, .port-item:hover, .skills:hover {
+.port-item:hover, .skills:hover {
 	background-color: white;
 }
 
-.about, .contact, .skills {
+.contact, .skills {
 	width: 80%;
 	margin: 35px auto;	
 }
 
 .about {
-	margin-top: 120px;
+	background-color: #FFD700;
+	padding-left: 100px;
+	padding-right: 300px;
+	margin: 40px 0;
 }
 
 .port-item {
 	display: inline-block;
 	width: 45%;
 	min-height: 222px;
-	margin: 10px 20px;
-	padding: 20px;
+	margin: 5px 20px;
+	padding: 15px;
 	vertical-align: top;
+	box-shadow: 2px 2px 4px #636363;
 }
 
 .contact>h4, .port-item h4 {
 	margin: 5px 0;
 }
 
-.contact, .contact div, h4 {
+.contact, .contact div {
 	text-align: center;
 }
 
@@ -130,5 +210,3 @@ hr {
 .cms {
 	font-style: italic;
 }
-
-
