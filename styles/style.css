@@ -96,11 +96,11 @@ p.message1, p.message2 {
 }
 
 p.message1 {
-	animation: type 4s steps(60, end); 
+	animation: type 3s steps(60, end); 
 }
 
 p.message2 {
-	animation: type2 6s steps(60, end);
+	animation: type2 4s steps(60, end);
 }
 
 span.blinker {
@@ -143,9 +143,9 @@ section.portfolio {
 .portfolio>h4 {
 	color: black;
 	font-size: 23px;
-	width: 45%;
 	padding: 5px;
-	margin: 10px auto;
+	margin: 15px auto;
+	text-align: center;
 }
 
 .port-item, .skills {
@@ -163,9 +163,10 @@ section.portfolio {
 
 .about {
 	background-color: #FFD700;
-	padding-left: 100px;
-	padding-right: 300px;
+	font-size: 20px;
+	padding: 25px 100px;
 	margin: 40px 0;
+	text-align: center;
 }
 
 .port-item {
@@ -209,4 +210,20 @@ section.portfolio {
 
 .cms {
 	font-style: italic;
+}
+
+@media only screen and (min-width: 583px) and (max-width: 835px) {
+
+	.port-item {
+		width: 40%;
+	}
+
+}
+
+@media only screen and (max-width: 583px) {
+
+	.port-item {
+		width: 90%;
+	}
+
 }
